@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FloodAid Bangladesh</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .hero-section {
+            background: url('http://www.wastatepta.org/wp-content/uploads/2016/11/Senior-volunteer-helping-African-American-man-register-for-marathon-000065245281_Medium.jpg') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+            position: relative;
+        }
+        .hero-section::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+        .hero-section .content {
+            position: relative;
+            z-index: 2;
+        }
+        .footer {
+            background: #333;
+            color: white;
+            padding: 20px 0;
+        }
+        .footer a {
+            color: #bbb;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">FloodAid</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link " href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="volunteers.html">Volunteers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="donations.html">Donations</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <div class="hero-section">
+        <div class="content">
+            <h1>Join Our Volunteer Team</h1>
+            <p>Together,we can bring hope and relief to those affected by the floods.</p>
+            <a href="#" class="btn btn-primary">Apply Now</a>
+        </div>
+    </div>
+
+    <!-- Mission and Vision -->
+    <div class="container py-5">
+        <div class="text-center mb-4">
+            <h2>Our Mission and Vision</h2>
+            <p>FloodAid Bangladesh is committed to providing timely relief and rehabilitation to flood-affected communities. Our vision is to create a world where everyone receives immediate help during natural disasters, and our mission is to serve with compassion, integrity, and dedication.</p>
+        </div>
+        <div class="row text-center">
+            <div class="col-md-4">
+                <h4>Compassion</h4>
+            </div>
+            <div class="col-md-4">
+                <h4>Integrity</h4>
+            </div>
+            <div class="col-md-4">
+                <h4>Dedication</h4>
+            </div>
+        </div>
+        <div class="text-center mt-4">
+            <a href="#" class="btn btn-success">Make a Donation</a>
+            <a href="#" class="btn btn-secondary">Become a Volunteer</a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer text-center">
+        <div class="container">
+            <p>Contact Us: [Phone] +880123456789 | [Email] info@floodaid.org | [Address] Dhaka, Bangladesh</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
