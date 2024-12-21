@@ -3,104 +3,138 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FloodAid Bangladesh</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Nur Alam Mohon - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
-        .hero-section {
-            background: url('http://www.wastatepta.org/wp-content/uploads/2016/11/Senior-volunteer-helping-African-American-man-register-for-marathon-000065245281_Medium.jpg') no-repeat center center/cover;
-            color: white;
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
             text-align: center;
-            padding: 100px 20px;
-            position: relative;
         }
-        .hero-section::after {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.5);
-            z-index: 1;
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
         }
-        .hero-section .content {
-            position: relative;
-            z-index: 2;
+
+        header p {
+            margin: 5px 0 0;
         }
-        .footer {
-            background: #333;
-            color: white;
-            padding: 20px 0;
+
+        .profile-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px 20px;
         }
-        .footer a {
-            color: #bbb;
+
+        .profile-section img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border: 4px solid #333;
+            margin-bottom: 20px;
+        }
+
+        .profile-section h2 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        .profile-section p {
+            font-size: 1rem;
+            text-align: center;
+            max-width: 600px;
+        }
+
+        .skills-section, .projects-section {
+            padding: 40px 20px;
+        }
+
+        .skills-section h3, .projects-section h3 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+        }
+
+        .skills-section ul, .projects-section ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .skills-section li, .projects-section li {
+            background-color: #fff;
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: #4caf50;
             text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
-    <!-- Header -->
-    <header class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
-            <a class="navbar-brand" href="#">Nur Alam<br>Mohon</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link " href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link " href="volunteers.html">Volunteers</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link " href="donations.html">Donations</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
+    <header>
+        <h1>Nur Alam Mohon</h1>
+        <p>UI/UX Designer | WordPress Developer | Management Student</p>
     </header>
 
-    <!-- Hero Section -->
-    <div class="hero-section">
-        <div class="content">
-            <h1>Join Our Volunteer Team</h1>
-            <p>Together,we can bring hope and relief to those affected by the floods.</p>
-            <a href="#" class="btn btn-primary">Apply Now</a>
-        </div>
-    </div>
+    <section class="profile-section">
+        <img src="/mnt/data/m.jpg" alt="Nur Alam Mohon's Profile Picture">
+        <h2>About Me</h2>
+        <p>Hello! I am Nur Alam Mohon, a passionate UI/UX designer and WordPress developer with a background in management studies. I strive to create meaningful digital experiences and impactful projects.</p>
+    </section>
 
-    <!-- Mission and Vision -->
-    <div class="container py-5">
-        <div class="text-center mb-4">
-            <h2>Our Mission and Vision</h2>
-            <p>FloodAid Bangladesh is committed to providing timely relief and rehabilitation to flood-affected communities. Our vision is to create a world where everyone receives immediate help during natural disasters, and our mission is to serve with compassion, integrity, and dedication.</p>
-        </div>
-        <div class="row text-center">
-            <div class="col-md-4">
-                <h4>Compassion</h4>
-            </div>
-            <div class="col-md-4">
-                <h4>Integrity</h4>
-            </div>
-            <div class="col-md-4">
-                <h4>Dedication</h4>
-            </div>
-        </div>
-        <div class="text-center mt-4">
-            <a href="#" class="btn btn-success">Make a Donation</a>
-            <a href="#" class="btn btn-secondary">Become a Volunteer</a>
-        </div>
-    </div>
+    <section class="skills-section">
+        <h3>Skills</h3>
+        <ul>
+            <li>UI/UX Design</li>
+            <li>WordPress Development</li>
+            <li>Advanced Excel</li>
+            <li>PowerPoint and G-Suite Tools</li>
+            <li>Leadership and Communication</li>
+        </ul>
+    </section>
 
-    <!-- Footer -->
-    <footer class="footer text-center">
-        <div class="container">
-            <p>Contact Us: [Phone] +880123456789 | [Email] info@floodaid.org | [Address] Dhaka, Bangladesh</p>
-        </div>
+    <section class="projects-section">
+        <h3>Projects</h3>
+        <ul>
+            <li><strong>TEDxUniversityofBarishal:</strong> Organized and developed a dedicated website for registration.</li>
+            <li><strong>Business Case Competitions:</strong> Participated as a member of "Team Disruptor."</li>
+            <li><strong>Artisanal Convergence:</strong> A designer's gathering organized at Barishal.</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>© 2024 Nur Alam Mohon. Designed with ❤️ by Nur Alam Mohon. <a href="#">Contact Me</a></p>
     </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
